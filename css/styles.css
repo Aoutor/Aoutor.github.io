@@ -1,0 +1,11 @@
+html {
+    height: 100%;
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+    height: inherit;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
