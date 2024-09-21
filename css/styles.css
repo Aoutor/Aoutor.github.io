@@ -34,6 +34,14 @@ main {
     justify-content: left;
 }
 
+.fixed {
+    flex: 1;
+    display: flex;
+    flex-direction:row;
+    align-items: left;
+    justify-content: left;
+}
+
 footer {
     text-align: center;
     color: rgb(149, 149, 149);
