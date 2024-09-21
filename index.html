@@ -20,7 +20,7 @@
     </div>
 
     <main>
-        <div>
+        <div class="fixed">
             <div class="dark-theme">
                 <p>
                     EXPLORER
@@ -38,7 +38,7 @@
             <script>
                 const lineNumbersContainer = document.getElementById('line-numbers');
                 const numberOfLines = 24;
-    
+
                 for (let i = 1; i <= numberOfLines; i++) {
                     const lineNumber = document.createElement('p');
                     lineNumber.textContent = i;
@@ -46,6 +46,7 @@
                 }
             </script>
         </div>
+
 
         <div class="container">
             <div class="display">
