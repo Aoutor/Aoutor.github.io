@@ -3,24 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
     <title>Alexander Zubchenko | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css"> <!--css files-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap">
     <script src="js/scripts.js" defer></script> <!--JS files-->
 </head>
 <body>
-    <header>
-        <h2>Alexander Zubchenko's Portfolio</h2>
-    </header>
+    <div class="dark-theme1">
+        <header>
+            <p class="gray-theme"> 
+                <img src="assets/search.png" style="width: 12px; height: 12px; margin-right: 5px; filter: brightness(100);"> 
+                Alexander Zubchenko's Portfolio
+            </p>
+        </header>
+    </div>
 
     <main>
-        <div>
-            <p> Random Information Here </p>
+        <div class="dark-theme">
+            <div class="tabs">
+                <p> test </p>
+            </div>
         </div>
+
+        <div class="dark-theme">
+            <p>
+                EXPLORER
+                <img src="assets/dots.webp" style="width: 15px; height: 15px; filter: brightness(50); vertical-align: -2px; margin-left: 15px;">
+            </p>
+            <div class="tabs">
+                <p><a href="#" class="menu-item" data-file="about.html"><img src="assets/xml.svg" class="icon"> About</a></p>
+                <p><a href="#" class="menu-item" data-file="education.html"><img src="assets/xml.svg" class="icon"> Education</a></p>
+                <p><a href="#" class="menu-item" data-file="projects.html"><img src="assets/xml.svg" class="icon"> Projects</a></p>
+                <p><a href="#" class="menu-item" data-file="resume.html"><img src="assets/xml.svg" class="icon"> Resume</a></p>
+            </div>
+        </div>
+
+        <div class="line-numbers dark-theme" id="line-numbers"></div>
+        <script>
+            const lineNumbersContainer = document.getElementById('line-numbers');
+            const numberOfLines = 24;
+
+            for (let i = 1; i <= numberOfLines; i++) {
+                const lineNumber = document.createElement('p');
+                lineNumber.textContent = i;
+                lineNumbersContainer.appendChild(lineNumber);
+            }
+        </script>
+
+        <div class="container">
+            <div class="display">
+
+                <script>
+                    document.querySelectorAll('.menu-item').forEach(item => {
+                        item.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            const fileToLoad = this.getAttribute('data-file');
+                
+                            fetch(fileToLoad)
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error('Network response was not ok');
+                                    }
+                                    return response.text();
+                                })
+                                .then(data => {
+                                    document.querySelector('.display').innerHTML = data;
+                                })
+                                .catch(error => {
+                                    console.error('There was a problem with the fetch operation:', error);
+                                });
+                        });
+                    });
+                </script>
+                
+
+            </div>
+        </div>
+
     </main>
     
-    <footer>
-        <p>2024 Alexander Zubchenko</p>
-        <p><a href="https://github.com/Aoutor" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/alexander-zubchenko/" target="_blank">LinkedIn</a></p>
+    <footer class="footer">
+        <p>alexander.zubchenko[at]mail.utoronto.ca</p>
+        <div>
+            <a href="https://github.com/Aoutor" target="_blank"> 
+                <img src="assets/github.svg" style="width: 20px; height: 20px; margin-right: 1.5px; vertical-align: -3px"> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/alexander-zubchenko/" target="_blank">
+                <img src="assets/LinkedIn.png" style="width: 20px; height: 20px; margin-right: 1.5px; vertical-align: -3px;"> LinkedIn
+            </a>
+        </div>
     </footer>
 </body>
 </html>
