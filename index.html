@@ -10,7 +10,7 @@
     <script src="js/scripts.js" defer></script> <!--JS files-->
 </head>
 <body>
-    <div class="dark-theme1">
+    <div class="top"> <!-- TOP BAR -->
         <header>
             <p class="gray-theme"> 
                 <img src="assets/search.png" style="width: 12px; height: 12px; margin-right: 5px; filter: brightness(100);"> 
@@ -20,69 +20,33 @@
     </div>
 
     <main>
-        <div class="fixed">
-            <div> sd </div>
-            <div> dsd </div>
-            <div> sdsd </div>
+        <div class="sidebar">
+            <div class="dark-theme">
+                <p>
+                    EXPLORER
+                    <img src="assets/dots.webp" style="width: 15px; height: 15px; filter: brightness(50); vertical-align: -2px; margin-left: 15px;">
+                </p>
+                <div class="tabs">
+                    <p><a href="#" class="menu-item" data-file="about.html"><img src="assets/html.png" class="icon"> About</a></p>
+                    <p><a href="#" class="menu-item" data-file="education.html"><img src="assets/html.png" class="icon"> Education</a></p>
+                    <p><a href="#" class="menu-item" data-file="projects.html"><img src="assets/html.png" class="icon"> Projects</a></p>
+                    <p><a href="#" class="menu-item" data-file="resume.html"><img src="assets/html.png" class="icon"> Resume</a></p>
+                </div>
+            </div>
 
-    
-        </div>
-
-        <div class="dark-theme">
-            <p>
-                EXPLORER
-                <img src="assets/dots.webp" style="width: 15px; height: 15px; filter: brightness(50); vertical-align: -2px; margin-left: 15px;">
-            </p>
-            <div class="tabs">
-                <p><a href="#" class="menu-item" data-file="about.html"><img src="assets/xml.svg" class="icon"> About</a></p>
-                <p><a href="#" class="menu-item" data-file="education.html"><img src="assets/xml.svg" class="icon"> Education</a></p>
-                <p><a href="#" class="menu-item" data-file="projects.html"><img src="assets/xml.svg" class="icon"> Projects</a></p>
-                <p><a href="#" class="menu-item" data-file="resume.html"><img src="assets/xml.svg" class="icon"> Resume</a></p>
+            <div class="line-numbers" id="line-numbers">
+                <img src="assets/xml.svg" class="icon">
             </div>
         </div>
-
-        <div class="line-numbers dark-theme" id="line-numbers"></div>
-        <script>
-            const lineNumbersContainer = document.getElementById('line-numbers');
-            const numberOfLines = 24;
-
-            for (let i = 1; i <= numberOfLines; i++) {
-                const lineNumber = document.createElement('p');
-                lineNumber.textContent = i;
-                lineNumbersContainer.appendChild(lineNumber);
-            }
-        </script>
 
         <div class="container">
-            <div class="display">
-
-                <script>
-                    document.querySelectorAll('.menu-item').forEach(item => {
-                        item.addEventListener('click', function (e) {
-                            e.preventDefault();
-                            const fileToLoad = this.getAttribute('data-file');
+            <div class="window">
+                <p>About.html</p>
+            </div>
+            <div class="html_text">
                 
-                            fetch(fileToLoad)
-                                .then(response => {
-                                    if (!response.ok) {
-                                        throw new Error('Network response was not ok');
-                                    }
-                                    return response.text();
-                                })
-                                .then(data => {
-                                    document.querySelector('.display').innerHTML = data;
-                                })
-                                .catch(error => {
-                                    console.error('There was a problem with the fetch operation:', error);
-                                });
-                        });
-                    });
-                </script>
-                
-
             </div>
         </div>
-
     </main>
     
     <footer class="footer">
