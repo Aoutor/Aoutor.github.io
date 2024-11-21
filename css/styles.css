@@ -146,8 +146,9 @@ footer {
     color: hsl(223, 65%, 54%);
 }
 
-br {
-    height: 24px;
+br{
+    display: block;
+    height: 50px;
 }
 
 
