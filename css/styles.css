@@ -117,13 +117,6 @@ footer {
 }
 
 .window {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: #141414;
-    flex-wrap: wrap;
-    width: 300px;
-    border-right: 1px solid #424242;
 }
 
 .window p {
@@ -132,6 +125,7 @@ footer {
     padding: 8px;
     box-sizing: border-box;
     background-color:#212121;
+    border-right: 1px solid #424242;
 }
 
 .html_text {
