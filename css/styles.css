@@ -147,7 +147,7 @@ footer {
 }
 
 br {
-    line-height: 24px; /* Control spacing for <br> */
+    height: 24px;
 }
 
 
