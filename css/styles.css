@@ -122,6 +122,7 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     background-color: #141414;
+    flex-wrap: wrap;
 }
 
 .window p {
