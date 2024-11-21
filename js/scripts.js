@@ -1,4 +1,3 @@
-
 const lineNumbersContainer = document.getElementById('line-numbers');
 const numberOfLines = 30;
 for (let i = 1; i <= numberOfLines; i++) {
@@ -24,17 +23,13 @@ function loadContent(file) {
     fetch(file)
         .then(response => {
             if (!response.ok) {
-                throw new Error(`Failed to fetch ${file}: ${response.statusText}`);
             }
             return response.text();
         })
         .then(data => {
             contentElement.innerHTML = data;
         })
-        .catch(error => {
-            console.error('Error loading content:', error);
-            contentElement.innerHTML = "Error loading content. Please try again later.";
-        });
 }
+
 
 
