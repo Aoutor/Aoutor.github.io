@@ -10,6 +10,11 @@ const menuItems = document.querySelectorAll('.menu-item');
 
 const contentElement = document.getElementById('content');
 
+document.addEventListener('DOMContentLoaded', () => {
+    loadContent('about.html');
+});
+
+
 menuItems.forEach(item => {
     item.addEventListener('click', (event) => {
         event.preventDefault();
