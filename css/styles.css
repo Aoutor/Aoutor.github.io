@@ -138,4 +138,16 @@ footer {
     height: 24px;
 }
 
+.education {
+
+}
+
+.darker-text {
+    color: hsl(223, 65%, 54%);
+}
+
+br {
+    line-height: 24px; /* Control spacing for <br> */
+}
+
 
