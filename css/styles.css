@@ -8,7 +8,7 @@ html, body {
 /* center and constrain main container */
 .main-container {
   width: 60%;           /* occupy 60% of the viewport width */
-  padding-top: 5%;
+  padding-top: 2.5%;
   margin: 0 auto;       /* center it horizontally */
   display: flex;        
   flex-direction: column;  /* stack children top→down */
@@ -35,8 +35,8 @@ html, body {
 }
 
 .subtitle {
-  margin: 0.25rem 0 0;
-  font-size: 1rem;
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
   color: #555;
 }
 
@@ -48,7 +48,7 @@ html, body {
 
 .tabs a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #333;
 }
 
