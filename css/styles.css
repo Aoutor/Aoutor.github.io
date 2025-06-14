@@ -7,7 +7,7 @@ html, body {
 
 /* center and constrain main container */
 .main-container {
-  width: 50%;           /* occupy 60% of the viewport width */
+  width: 75%;           /* occupy 60% of the viewport width */
   padding-top: 2.5%;
   margin: 0 auto;       /* center it horizontally */
   display: flex;        
@@ -55,9 +55,9 @@ html, body {
 
 .tabs-divider {
   border: none;
-  border-bottom: 2px solid #aaaaaa; /* thickness & color */
+  border-bottom: 0.5px solid #cccccc; /* thickness & color */
   width: 100%;                   /* full width of your container */
-  margin: 0 0 1.5rem;            /* space below it before content */
+  margin: 1.5 0 1.5rem 0;            /* space below it before content */
 }
 
 
