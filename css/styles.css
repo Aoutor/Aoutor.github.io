@@ -17,6 +17,7 @@ html, body {
 /* keep header full-width of the container */
 .header-container {
   width: 100%;
+  padding-top: 5%;
 }
 
 /* the rest of your header as before */
