@@ -55,7 +55,7 @@ html, body {
 
 .tabs-divider {
   border: none;
-  border-bottom: 2px solid #333; /* thickness & color */
+  border-bottom: 2px solid #aaaaaa; /* thickness & color */
   width: 100%;                   /* full width of your container */
   margin: 0 0 1.5rem;            /* space below it before content */
 }
