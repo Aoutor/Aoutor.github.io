@@ -8,7 +8,7 @@ html, body {
 /* center and constrain main container */
 .main-container {
   width: 60%;           /* occupy 60% of the viewport width */
-  padding-top: 2.5%;
+  padding-top: 0.5rem;
   margin: 0 auto;       /* center it horizontally */
   display: flex;        
   flex-direction: column;  /* stack children top→down */
@@ -28,7 +28,7 @@ html, body {
   justify-content: space-between;
 }
 
-.last-updated-time {
+.upper-bar {
   display: inline-block;       /* shrink-wrap to the text */
   color: #555555;
   background-color: #f0f2f5;
