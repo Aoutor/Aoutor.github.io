@@ -7,7 +7,7 @@ html, body {
 
 /* center and constrain main container */
 .main-container {
-  width: 75%;           /* occupy 60% of the viewport width */
+  width: 60%;           /* occupy 60% of the viewport width */
   padding-top: 2.5%;
   margin: 0 auto;       /* center it horizontally */
   display: flex;        
