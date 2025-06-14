@@ -30,7 +30,7 @@ html, body {
 
 .bonfire-image {
   display: block;            /* so margin auto works */
-  width: 150px;              /* or whatever exact width you want */
+  width: 100px;              /* or whatever exact width you want */
   height: auto;              /* preserve aspect ratio */
   margin: 0 0 0 auto;     /* top 0, right 0, bottom 1rem, left auto → pushes it right */
 }
