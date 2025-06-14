@@ -31,12 +31,12 @@ html, body {
 .last-updated-time {
   display: inline-block;       /* shrink-wrap to the text */
   color: #555555;
-  background-color: #e2e6eb;
+  background-color: #eef0f3;
   border: 1px solid #b0b4b8;      /* thin outline */
   border-radius: 5px;          /* slight rounding */
   font-size: 1rem;         /* optional: make it a bit smaller */
   margin: 0;                   /* remove any default spacing */
-  padding: 2px 6px;            /* tweak to taste—just enough breathing room */
+  padding: 4px 12px;            /* tweak to taste—just enough breathing room */
   line-height: 1;
 }
 
