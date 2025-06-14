@@ -58,6 +58,9 @@ html, body {
   font-size: 1rem;
   line-height: 1;
 }
+.upper-bar p:hover {
+  background-color: #474747;
+}
 
 /* Title & subtitle */
 .title h1 {
