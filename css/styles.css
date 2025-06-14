@@ -28,13 +28,6 @@ html, body {
   justify-content: space-between;
 }
 
-.bonfire-image {
-  display: block;            /* so margin auto works */
-  width: 80px;              /* or whatever exact width you want */
-  height: auto;              /* preserve aspect ratio */
-  margin: auto 0 0 0;     /* top 0, right 0, bottom 1rem, left auto → pushes it right */
-}
-
 .upper-bar {
   display: inline-block;       /* shrink-wrap to the text */
   color: #555555;
