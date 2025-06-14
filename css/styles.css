@@ -24,7 +24,8 @@ html, body {
 /* the rest of your header as before */
 .header {
   padding: 2rem;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title h1 {
