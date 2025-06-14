@@ -31,9 +31,9 @@ html, body {
 .last-updated-time {
   align-items: center;
   display: inline-block;       /* shrink-wrap to the text */
-  color: #adadad;
+  color: #919191;
   background-color: #eeeeee;
-  border: 1px solid #adadad;      /* thin outline */
+  border: 1px solid #919191;      /* thin outline */
   border-radius: 5px;          /* slight rounding */
   font-size: 1rem;         /* optional: make it a bit smaller */
   margin: 0;                   /* remove any default spacing */
