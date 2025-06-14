@@ -1,74 +1,99 @@
-/* reset body margins */
+/*────────────────────────────────────────────────────────────────────────*/
+/* 1. Theme variables                                                   */
+:root {
+  --color-bg:          #121212;   /* page background */
+  --color-surface:     #1e1e1e;   /* panels/containers */
+  --color-text-primary:#e0e0e0;   /* main text */
+  --color-text-secondary:#888888; /* secondary text */
+  --color-divider:     #333333;   /* thin lines */
+  --color-accent:      #ff9800;   /* orange highlight */
+  --color-accent-alt:  #2196f3;   /* blue highlight */
+}
+
+/*────────────────────────────────────────────────────────────────────────*/
+/* 2. Global resets & base                                              */
 html, body {
   margin: 0;
   padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
   font-family: sans-serif;
 }
 
-/* center and constrain main container */
+/*────────────────────────────────────────────────────────────────────────*/
+/* 3. Main layout                                                       */
 .main-container {
-  width: 60%;           /* occupy 60% of the viewport width */
+  width: 60%;
+  margin: 0 auto;
   padding-top: 0.75rem;
-  margin: 0 auto;       /* center it horizontally */
-  display: flex;        
-  flex-direction: column;  /* stack children top→down */
-  min-height: 100vh;    /* optional: fill full height */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
 }
 
-/* keep header full-width of the container */
+/*────────────────────────────────────────────────────────────────────────*/
+/* 4. Header                                                            */
 .header-container {
   width: 100%;
   align-items: center;
 }
 
-/* the rest of your header as before */
 .header {
-  padding-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2rem;
 }
 
+/* “badge” / upper‐bar styling */
 .upper-bar {
-  display: inline-block;       /* shrink-wrap to the text */
-  color: #555555;
-  background-color: #f0f2f5;
-  border: 1px solid #cccccc;      /* thin outline */
-  border-radius: 5px;          /* slight rounding */
-  font-size: 1rem;         /* optional: make it a bit smaller */
-  margin: 0;                   /* remove any default spacing */
-  padding: 4px 12px;            /* tweak to taste—just enough breathing room */
+  display: inline-block;
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  border-radius: 5px;
+  padding: 4px 12px;
+  font-size: 1rem;
   line-height: 1;
 }
 
+/* Title & subtitle */
 .title h1 {
   margin: 0;
-  font-size: 2.25rem; /* large dark text */
-  color: #111;
+  font-size: 2.25rem;
+  color: var(--color-text-primary);
 }
 
 .subtitle {
   margin: 0.5rem 0 0;
   font-size: 1rem;
-  color: #555555;
+  color: var(--color-text-secondary);
 }
 
+/*────────────────────────────────────────────────────────────────────────*/
+/* 5. Navigation tabs                                                   */
 .tabs {
-  margin: 0;
-  gap: 5rem; /* small gap between links */
+  display: flex;
+  gap: 5rem;
 }
 
 .tabs a {
   text-decoration: none;
   font-size: 1rem;
-  color: #6F8FAF;
+  color: var(--color-accent);
   padding-right: 2.5rem;
+  transition: color 0.2s ease-in-out;
+}
+.tabs a:hover {
+  color: var(--color-accent-alt);
 }
 
+/* Line under tabs */
 .tabs-divider {
   border: none;
-  border-bottom: 0.5px solid #cccccc; /* thickness & color */
-  width: 100%;                   /* full width of your container */
-  margin: 1.5rem 0 1.5rem 0;            /* space below it before content */
+  border-bottom: 0.5px solid var(--color-divider);
+  width: 100%;
+  margin: 1.5rem 0;
 }
 
 
