@@ -33,7 +33,7 @@ html, body {
   display: inline-block;       /* shrink-wrap to the text */
   color: #555;
   background-color: #eeeeee;
-  border: 1px solid #969696;      /* thin outline */
+  border: 1px solid #adadad;      /* thin outline */
   border-radius: 4px;          /* slight rounding */
   font-size: 0.875rem;         /* optional: make it a bit smaller */
   line-height: 1;              /* keep text vertically centered */
