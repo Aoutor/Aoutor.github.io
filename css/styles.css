@@ -54,10 +54,11 @@ html, body {
 }
 
 .tabs-divider {
+  padding-left: 2rem;
   border: none;
   border-bottom: 0.5px solid #cccccc; /* thickness & color */
   width: 100%;                   /* full width of your container */
-  margin: 1.5 0 1.5rem 0;            /* space below it before content */
+  margin: 2rem 0 2rem 0;            /* space below it before content */
 }
 
 
