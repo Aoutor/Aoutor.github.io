@@ -7,7 +7,7 @@ html, body {
 
 /* center and constrain main container */
 .main-container {
-  width: 50%;           /* occupy 60% of the viewport width */
+  width: 60%;           /* occupy 60% of the viewport width */
   margin: 0 auto;       /* center it horizontally */
   display: flex;        
   flex-direction: column;  /* stack children top→down */
@@ -17,15 +17,14 @@ html, body {
 /* keep header full-width of the container */
 .header-container {
   width: 100%;
-  padding-top: 5%;
+  padding-top: 10;
+  align-items: center;
 }
 
 /* the rest of your header as before */
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-direction: column;
   padding: 2rem;
 }
 
@@ -42,8 +41,9 @@ html, body {
 }
 
 .tabs {
-  display: flex;
+  margin: 0;
   gap: 1.5rem; /* small gap between links */
+  padding: 2rem;
 }
 
 .tabs a {
