@@ -99,12 +99,12 @@ html, body {
 .about-me-container {
   display: inline-block;
   color: var(--color-text-primary);
-  background-color: #131313;
+  background-color: #1d1d1d;
   border: 1px solid var(--color-divider);
   border-radius: 5px;
   padding: 20px 20px;
   font-size: 1rem;
-  line-height: 1;
+  line-height: 2;
 }
 
 
