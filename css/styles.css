@@ -28,6 +28,13 @@ html, body {
   justify-content: space-between;
 }
 
+.bonfire-image {
+  display: block;
+  margin: 0 0 1rem auto;/* top/right/bottom/left – left:auto pushes it right */
+  display: block;
+  margin: 1rem auto;
+}
+
 .upper-bar {
   display: inline-block;       /* shrink-wrap to the text */
   color: #555555;
