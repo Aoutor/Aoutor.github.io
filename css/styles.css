@@ -32,7 +32,7 @@ html, body {
   display: block;            /* so margin auto works */
   width: 80px;              /* or whatever exact width you want */
   height: auto;              /* preserve aspect ratio */
-  margin: 0 0 0 auto;     /* top 0, right 0, bottom 1rem, left auto → pushes it right */
+  margin: auto 0 0 0;     /* top 0, right 0, bottom 1rem, left auto → pushes it right */
 }
 
 .upper-bar {
