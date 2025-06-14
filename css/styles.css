@@ -31,8 +31,8 @@ html, body {
 .last-updated-time {
   display: inline-block;       /* shrink-wrap to the text */
   color: #555555;
-  background-color: #eef0f3;
-  border: 1px solid #b0b4b8;      /* thin outline */
+  background-color: #f0f2f5;
+  border: 1px solid #cccccc;      /* thin outline */
   border-radius: 5px;          /* slight rounding */
   font-size: 1rem;         /* optional: make it a bit smaller */
   margin: 0;                   /* remove any default spacing */
