@@ -1,3 +1,24 @@
+/* reset body margins */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* center and constrain main container */
+.main-container {
+  width: 60%;           /* occupy 60% of the viewport width */
+  margin: 0 auto;       /* center it horizontally */
+  display: flex;        
+  flex-direction: column;  /* stack children top→down */
+  min-height: 100vh;    /* optional: fill full height */
+}
+
+/* keep header full-width of the container */
+.header-container {
+  width: 100%;
+}
+
+/* the rest of your header as before */
 .header {
   display: flex;
   align-items: center;
