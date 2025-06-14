@@ -97,6 +97,7 @@ html, body {
 }
 
 .about-me-container {
+  margin: 0;
   display: inline-block;
   color: var(--color-text-primary);
   background-color: #1d1d1d;
