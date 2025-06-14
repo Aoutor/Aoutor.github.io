@@ -7,7 +7,7 @@ html, body {
 
 /* center and constrain main container */
 .main-container {
-  width: 60%;           /* occupy 60% of the viewport width */
+  width: 50%;           /* occupy 60% of the viewport width */
   margin: 0 auto;       /* center it horizontally */
   display: flex;        
   flex-direction: column;  /* stack children top→down */
