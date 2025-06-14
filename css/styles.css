@@ -29,7 +29,6 @@ html, body {
 }
 
 .last-updated-time {
-  align-items: center;
   display: inline-block;       /* shrink-wrap to the text */
   color: #919191;
   background-color: #eeeeee;
