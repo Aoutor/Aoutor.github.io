@@ -25,6 +25,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   padding: 2rem;
 }
 
