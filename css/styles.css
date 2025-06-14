@@ -31,14 +31,12 @@ html, body {
 .last-updated-time {
   align-items: center;
   display: inline-block;       /* shrink-wrap to the text */
-  color: #555;
+  color: #adadad;
   background-color: #eeeeee;
   border: 1px solid #adadad;      /* thin outline */
-  border-radius: 4px;          /* slight rounding */
-  font-size: 0.875rem;         /* optional: make it a bit smaller */
-  line-height: 1;              /* keep text vertically centered */
-  margin: 0;                   /* remove any default spacing */
-  padding: 2px 6px;            /* tweak to taste—just enough breathing room */
+  border-radius: 5px;          /* slight rounding */
+  font-size: 1rem;         /* optional: make it a bit smaller */
+  margin: 0.25;                   /* remove any default spacing */
 }
 
 .title h1 {
