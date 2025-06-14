@@ -36,7 +36,8 @@ html, body {
   border: 1px solid #adadad;      /* thin outline */
   border-radius: 5px;          /* slight rounding */
   font-size: 1rem;         /* optional: make it a bit smaller */
-  margin: 0.25;                   /* remove any default spacing */
+  margin: 0;                   /* remove any default spacing */
+  padding: 2px 6px;            /* tweak to taste—just enough breathing room */
 }
 
 .title h1 {
