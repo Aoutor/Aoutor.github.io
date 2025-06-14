@@ -1,8 +1,8 @@
 /*────────────────────────────────────────────────────────────────────────*/
 /* 1. Theme variables                                                   */
 :root {
-  --color-bg:          #2b2b2b;   /* page background */
-  --color-surface:     #2b2b2b;   /* panels/containers */
+  --color-bg:          #424242;   /* page background */
+  --color-surface:     #424242;   /* panels/containers */
   --color-text-primary:#e0e0e0;   /* main text */
   --color-text-secondary:#888888; /* secondary text */
   --color-divider:     #333333;   /* thin lines */
