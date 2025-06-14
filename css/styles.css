@@ -1,13 +1,13 @@
 /*────────────────────────────────────────────────────────────────────────*/
 /* 1. Theme variables                                                   */
 :root {
-  --color-bg:          #121212;   /* page background */
-  --color-surface:     #1e1e1e;   /* panels/containers */
+  --color-bg:          #2b2b2b;   /* page background */
+  --color-surface:     #2b2b2b;   /* panels/containers */
   --color-text-primary:#e0e0e0;   /* main text */
   --color-text-secondary:#888888; /* secondary text */
   --color-divider:     #333333;   /* thin lines */
-  --color-accent:      #ff9800;   /* orange highlight */
-  --color-accent-alt:  #2196f3;   /* blue highlight */
+  --color-accent:      #8fbbe4;   /* orange highlight */
+  --color-accent-alt:  #528ddb;   /* blue highlight */
 }
 
 /*────────────────────────────────────────────────────────────────────────*/
