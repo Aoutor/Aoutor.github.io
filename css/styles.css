@@ -42,8 +42,8 @@ html, body {
 
 .tabs {
   margin: 0;
-  gap: 1.5rem; /* small gap between links */
-  padding: 2rem;
+  gap: 5rem; /* small gap between links */
+  padding-left: 2rem;
 }
 
 .tabs a {
