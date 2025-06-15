@@ -165,4 +165,14 @@ html, body {
   padding-left: 1.25rem;
 }
 
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical alignment */
+  align-items: center;     /* horizontal alignment */
+  text-align: center;      /* center text inside elements */
+}
+
 
