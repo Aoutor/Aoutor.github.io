@@ -172,13 +172,15 @@ html, body {
 
 .experience-container {
   margin: 0;
-  display: flex; /* switch from inline-block to flex */
-  flex-direction: row; /* horizontal layout */
-  align-items: center; /* vertical alignment */
-  justify-content: center;
-  gap: 1rem; /* optional: adds spacing between elements */
-  /* background-color: var(--color-text-primary); */ 
-  padding: 20px;
+  display: inline-block;
+  /* color: #1d1d1d; */
+  background-color: var(--color-text-primary);
+  border: 1px solid var(--color-divider);
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 1rem;
+  line-height: 2;
+  width: 50%;
 }
 
 
