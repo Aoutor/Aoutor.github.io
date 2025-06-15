@@ -19,7 +19,6 @@ html, body {
   color: var(--color-text-primary);
   font-family: sans-serif;
   height: 100%;
-  overflow: hidden;
 }
 
 /*────────────────────────────────────────────────────────────────────────*/
