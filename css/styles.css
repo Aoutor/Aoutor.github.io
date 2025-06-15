@@ -131,7 +131,7 @@ html, body {
 .education-container h1 {
   margin: 0;
   font-size: 2.25rem;
-  color: #222222;
+  color: var(--color-divider);
   line-height: 1;
 }
 
