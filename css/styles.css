@@ -80,6 +80,7 @@ html, body {
   margin: 0.5rem 0 0;
   font-size: 1.5rem;
   color: var(--color-divider);
+  line-height: 1;
 }
 
 /*────────────────────────────────────────────────────────────────────────*/
@@ -149,7 +150,7 @@ html, body {
 }
 
 .coursework {
-  padding-left: 1rem;
+  padding-left: 1.25rem;
 }
 
 
