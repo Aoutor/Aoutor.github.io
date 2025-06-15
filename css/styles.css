@@ -27,7 +27,7 @@ html, body {
   width: 60%;
   margin: 0 auto;
   padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
