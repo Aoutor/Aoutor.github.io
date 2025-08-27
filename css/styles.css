@@ -61,6 +61,12 @@ html, body {
   line-height: 1;
   text-decoration: none;
 }
+
+.upper-bar-container {
+  justify-content: center; /* vertical alignment */
+  align-items: center;     /* horizontal alignment */
+  text-align: center;      /* center text inside elements */
+}
 .upper-bar-container a:hover {
   background-color: #f1f1f1;
 }
@@ -170,6 +176,24 @@ html, body {
 }
 
 /* BLOG TAB CSS */
+.blog-container {
+  background-color: #fafafa;
+  border: 1px solid #dddddd;       /* subtle border */
+  border-radius: 3px;              /* rounded corners */
+  padding: 15px 20px;              /* inner spacing */
+  margin-bottom: 1rem;             /* spacing between entries */
+}
+
+.blog-container:hover .blog-text {
+  color: var(--color-accent-alt); /* darker red on hover */
+}
+
+.blog-text {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  line-height: 1.25;
+}
 
 /* CONTACT LINK STYLING USING THEME COLORS */
 .contact-link {
