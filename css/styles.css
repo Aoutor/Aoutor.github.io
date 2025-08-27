@@ -4,11 +4,12 @@
   --color-bg:           #f9f9f9;   /* page background */
   --color-surface:      #ffffff;   /* panels/containers */
   --color-text-primary: #222222;   /* main text */
-  --color-text-secondary:#555555;  /* secondary text */
-  --color-divider:      #dcdcdc;   /* thin lines */
-  --color-accent:       #0056b3;   /* blue highlight */
-  --color-accent-alt:   #3399ff;   /* lighter blue hover */
+  --color-text-secondary:#55555;  /* secondary text */
+  --color-divider:      #666666;   /* thin lines */
+  --color-accent:       #914b4b;   /* blue highlight */
+  --color-accent-alt:   #811a1a;   /* lighter blue highlight */
 }
+
 
 /*────────────────────────────────────────────────────────────────────────*/
 /* 2. Global resets & base                                              */
@@ -17,7 +18,7 @@ html, body {
   padding: 0;
   background-color: var(--color-bg);
   color: var(--color-text-primary);
-  font-family: "Segoe UI", Roboto, sans-serif;
+  font-family: sans-serif;
   height: 100%;
 }
 
@@ -32,8 +33,6 @@ html, body {
   display: flex;
   flex-direction: column;
   background-color: var(--color-surface);
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
-  border-radius: 8px;
 }
 
 /*────────────────────────────────────────────────────────────────────────*/
@@ -54,7 +53,132 @@ html, body {
   display: inline-block;
   color: var(--color-text-secondary);
   background-color: var(--color-surface);
-  border: 1px solid
+  border: 1px solid var(--color-divider);
+  border-radius: 5px;
+  padding: 4px 12px;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
 }
+.upper-bar-container a:hover {
+  background-color: #eeeeee;
+}
+
+/* Title & subtitle */
+.title h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  color: var(--color-text-primary);
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.subtitle2 {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: var(--color-divider);
+}
+
+.resume-text {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  color: var(--color-divider);
+  line-height: 1.25;
+}
+
+.resume-text2 {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  color: var(--color-text-secondary);
+  line-height: 1.25;
+}
+
+/*────────────────────────────────────────────────────────────────────────*/
+/* 5. Navigation tabs                                                   */
+.tabs {
+  display: flex;
+  gap: 5rem;
+}
+
+.tabs a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-accent);
+  padding-right: 2.5rem;
+  transition: color 0.2s ease-in-out;
+}
+.tabs a:hover {
+  color: var(--color-accent-alt);
+}
+
+/* Line under tabs */
+.tabs-divider {
+  border: none;
+  border-bottom: 0.5px solid var(--color-divider);
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+/* ABOUT ME TAB CSS */
+.about-me-container {
+  margin: 0;
+  display: inline-block;
+  color: var(--color-text-primary);
+  background-color: #eeeeee;
+  border: 1px solid var(--color-divider);
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+/* EDUCATION TAB CSS */
+.education-container {
+  margin: 0;
+  display: inline-block;
+  color: var(--color-text-primary);
+  background-color: #eeeeee;
+  border: 1px solid var(--color-divider);
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.education-container h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  color: var(--color-divider);
+  line-height: 1;
+}
+
+.education-container hr {
+  border: none;
+  border-bottom: 0.5px solid var(--color-text-secondary);
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.coursework {
+  padding-left: 1.25rem;
+}
+
+/* BLOG TAB CSS */
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical alignment */
+  align-items: center;     /* horizontal alignment */
+  text-align: center;      /* center text inside elements */
+}
+
+
+
 
 
