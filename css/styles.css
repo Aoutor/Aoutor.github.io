@@ -186,6 +186,7 @@ html, body {
 
 .blog-container:hover .blog-text {
   color: var(--color-accent-alt); /* darker red on hover */
+  text-decoration: underline;   
 }
 
 .blog-text {
@@ -193,17 +194,17 @@ html, body {
   font-size: 1.5rem;
   color: var(--color-accent);
   line-height: 1.25;
+  text-decoration: none;   
 }
 
 /* CONTACT LINK STYLING USING THEME COLORS */
 .contact-link {
-  color: var(--color-text-secondary);  /* light grey from theme */
+  color: var(--color-accent);  /* light grey from theme */
   text-decoration: none;     
-  transition: color 0.2s ease-in-out;
 }
 
 .contact-link:hover {
-  color: var(--color-text-primary);    /* darker grey on hover */
+  color: var(--color-accent-alt);    /* darker grey on hover */
   text-decoration: underline;
 }
 
