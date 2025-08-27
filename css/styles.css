@@ -48,27 +48,17 @@ html, body {
   padding-bottom: 2rem;
 }
 
-/* “badge” / upper‐bar styling */
-.upper-bar {
-  display: inline-block;
-  justify-content: center;
-  color: var(--color-text-secondary);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-divider);
-  border-radius: 5px;
-  padding: 4px 12px;
-  font-size: 1rem;
-  line-height: 1;
-  text-decoration: none;
+.upper-bar-container {
+  display: flex;               /* align in a row */
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* center vertically */
+  gap: 1.25rem;                   /* space between icons */
 }
 
-.upper-bar-container {
-  justify-content: center; /* vertical alignment */
-  align-items: center;     /* horizontal alignment */
-  text-align: center;      /* center text inside elements */
-}
-.upper-bar-container a:hover {
-  background-color: #f1f1f1;
+.upper-bar img {
+  width: 30px;                 
+  height: 30px;
+  object-fit: contain;         
 }
 
 /* Title & subtitle */
