@@ -114,6 +114,7 @@ html, body {
 }
 .tabs a:hover {
   color: var(--color-accent-alt);
+  text-decoration: underline;
 }
 
 /* Line under tabs */
