@@ -58,6 +58,12 @@ html, body {
   gap: 1.25rem;                   /* space between icons */
 }
 
+.subtitle1 {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #a58b8b;
+}
+
 .upper-bar img {
   width: 30px;                 
   height: 30px;
