@@ -1,7 +1,7 @@
 /*────────────────────────────────────────────────────────────────────────*/
 /* 1. Theme variables                                                   */
 :root {
-  --color-bg:           #f9f9f9;   /* page background */
+  --color-bg:           #ffffff;   /* page background */
   --color-surface:      #ffffff;   /* panels/containers */
   --color-text-primary: #222222;   /* main text */
   --color-text-secondary:#55555;  /* secondary text */
