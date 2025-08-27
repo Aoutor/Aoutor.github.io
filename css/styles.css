@@ -4,7 +4,7 @@
   --color-bg:           #ffffff;   /* page background */
   --color-surface:      #ffffff;   /* panels/containers */
   --color-text-primary: #222222;   /* main text */
-  --color-text-secondary:#55555;  /* secondary text */
+  --color-text-secondary:#555555;  /* secondary text */
   --color-divider:      #666666;   /* thin lines */
   --color-accent:       #914b4b;   /* blue highlight */
   --color-accent-alt:   #811a1a;   /* lighter blue highlight */
@@ -61,7 +61,7 @@ html, body {
   text-decoration: none;
 }
 .upper-bar-container a:hover {
-  background-color: #eeeeee;
+  background-color: #f1f1f1;
 }
 
 /* Title & subtitle */
@@ -128,7 +128,7 @@ html, body {
   margin: 0;
   display: inline-block;
   color: var(--color-text-primary);
-  background-color: #eeeeee;
+  background-color: #f1f1f1;
   border: 1px solid var(--color-divider);
   border-radius: 5px;
   padding: 20px 20px;
@@ -141,7 +141,7 @@ html, body {
   margin: 0;
   display: inline-block;
   color: var(--color-text-primary);
-  background-color: #eeeeee;
+  background-color: #f1f1f1;
   border: 1px solid var(--color-divider);
   border-radius: 5px;
   padding: 20px 20px;
