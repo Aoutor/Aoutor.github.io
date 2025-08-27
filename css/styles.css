@@ -169,6 +169,19 @@ html, body {
 
 /* BLOG TAB CSS */
 
+/* CONTACT LINK STYLING USING THEME COLORS */
+.contact-link {
+  color: var(--color-text-secondary);  /* light grey from theme */
+  text-decoration: none;     
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  color: var(--color-text-primary);    /* darker grey on hover */
+  text-decoration: underline;
+}
+
+
 /* FOOTER */
 .footer {
   display: flex;
