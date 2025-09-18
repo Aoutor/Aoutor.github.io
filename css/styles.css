@@ -136,12 +136,7 @@ html, body {
 .about-me-container {
   margin: 0;
   display: inline-block;
-
-  background-color: #fafafa;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-
-  color: var(--color-text-primary);
+  background-color: #ced4da;
   padding: 20px 20px;
   font-size: 1rem;
   line-height: 2;
@@ -153,9 +148,7 @@ html, body {
   display: inline-block;
 
   background-color: #fafafa;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-
+  border-radius: 5px;
   color: var(--color-text-primary);
   padding: 20px 20px;
   font-size: 1rem;
@@ -184,8 +177,6 @@ html, body {
 /* BLOG TAB CSS */
 .blog-container {
   background-color: #fafafa;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
   padding: 15px 20px;              /* inner spacing */
 }
 
