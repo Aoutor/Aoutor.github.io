@@ -1,10 +1,10 @@
 /*────────────────────────────────────────────────────────────────────────*/
 /* 1. Theme variables                                                   */
 :root {
-  --color-bg:           #eeeeee;   /* page background */
-  --color-surface:      #eeeeee;   /* panels/containers */
-  --color-text-primary: #222222;   /* main text */
-  --color-text-secondary:#454545;  /* secondary text */
+  --color-bg:           #fafafa;   /* page background */
+  --color-surface:      #ffffff;   /* panels/containers */
+  --color-blue-bg:         #d9dee8;
+  --color-text-primary: #293340;   /* main text */
   --color-divider:      #666666;   /* thin lines */
   --color-accent:       #30568f;   /* Red Highlight #914b4b */
   --color-accent-alt:   #122035;   /* Red Highlight #811a1a */
@@ -18,7 +18,7 @@ html, body {
   padding: 0;
   background-color: var(--color-bg);
   color: var(--color-text-primary);
-  font-family: sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   height: 100%;
 }
 
@@ -32,7 +32,7 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-surface);
+  background-color: var(--color-bg);
 }
 
 /*────────────────────────────────────────────────────────────────────────*/
@@ -41,6 +41,9 @@ html, body {
   width: 100%;
   align-items: center;
   background-color: var(--color-accent-alt);
+  border-left: 1.5px solid var(--color-divider);
+  border-right: 1.5px solid var(--color-divider);
+  border-bottom: 1.5px solid var(--color-divider);
 }
 
 .header {
@@ -57,6 +60,9 @@ html, body {
   align-items: center;         /* center vertically */
   gap: 1.25rem;                   /* space between icons */
   background-color: var(--color-accent-alt);
+  border-top: 1.5px solid var(--color-divider);
+  border-left: 1.5px solid var(--color-divider);
+  border-right: 1.5px solid var(--color-divider);
 }
 
 .subtitle1 {
@@ -102,7 +108,7 @@ html, body {
 .resume-text2 {
   margin: 0.5rem 0 0;
   font-size: 1.5rem;
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   line-height: 1.25;
 }
 
@@ -127,7 +133,7 @@ html, body {
 /* Line under tabs */
 .tabs-divider {
   border: none;
-  border-bottom: 0.5px solid var(--color-divider);
+  border-bottom: 1.5px solid var(--color-text-primary);
   width: 100%;
   margin: 1.5rem 0;
 }
@@ -136,20 +142,22 @@ html, body {
 .about-me-container {
   margin: 0;
   display: inline-block;
-  background-color: #ced4da;
+  background-color: var(--color-surface);
   padding: 20px 20px;
   font-size: 1rem;
   line-height: 2;
+}
+
+.about-me-container p {
+  margin: 0 0 1rem 0;
 }
 
 /* EDUCATION TAB CSS */
 .education-container {
   margin: 0;
   display: inline-block;
-
-  background-color: #fafafa;
+  background-color: var(--color-surface);
   border-radius: 5px;
-  color: var(--color-text-primary);
   padding: 20px 20px;
   font-size: 1rem;
   line-height: 2;
@@ -165,7 +173,7 @@ html, body {
 
 .education-container hr {
   border: none;
-  border-bottom: 0.5px solid var(--color-text-secondary);
+  border-bottom: 1.5px solid var(--color-divider);
   width: 100%;
   margin: 0.5rem 0;
 }
