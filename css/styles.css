@@ -180,7 +180,7 @@ html, body {
 
 /* BLOG TAB CSS */
 .blog-container {
-  background-color: #fafafa;
+  background-color: var(--color-surface);
   padding: 15px 20px;              /* inner spacing */
 }
 
